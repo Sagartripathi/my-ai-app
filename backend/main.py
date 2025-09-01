@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env
 load_dotenv()
 
-# Create tablesmy-ai-app
+# Create tables
 models.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI()
@@ -56,3 +56,13 @@ async def ask_ai(prompt: Prompt, db: Session = Depends(get_db)):
     db.refresh(new_message)
 
     return {"answer": response.content}
+
+
+
+    
+@app.get("/history")
+def get_history(db: Session = Depends(get_db)):
+    messages = db.query(models.Message).order_by(models.Message.id.desc()).all()
+    return [
+        {"id": m.id, "prompt": m.prompt, "response": m.response} for m in messages
+    ]

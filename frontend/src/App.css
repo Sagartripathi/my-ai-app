@@ -80,3 +80,28 @@
   color: #333;
   white-space: pre-line;
 }
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.show-answer-btn {
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.dropdown-answer {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
