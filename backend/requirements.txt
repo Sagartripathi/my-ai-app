@@ -7,3 +7,4 @@ langchain
 langchain-openai
 python-dotenv
 EOL
+psycopg2-binary
