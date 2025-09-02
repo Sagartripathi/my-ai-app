@@ -1,0 +1,10 @@
+cat > requirements.txt <<EOL
+flask
+flask-cors
+sqlalchemy
+psycopg2-binary
+pydantic
+langchain
+langchain-openai
+python-dotenv
+EOL
