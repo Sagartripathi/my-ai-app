@@ -1,4 +1,3 @@
-cat > requirements.txt <<EOL
 flask
 flask-cors
 sqlalchemy
