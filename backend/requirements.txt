@@ -1,5 +1,6 @@
 flask
 flask-cors
+uvinoc
 sqlalchemy
 psycopg2-binary
 pydantic

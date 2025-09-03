@@ -66,3 +66,9 @@ def get_history(db: Session = Depends(get_db)):
     return [
         {"id": m.id, "prompt": m.prompt, "response": m.response} for m in messages
     ]
+
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("application:app", host="0.0.0.0", port=8002, reload=True)
