@@ -1,11 +1,10 @@
 flask
 flask-cors
-uvinoc
+fastapi
+uvicorn[standard]
 sqlalchemy
 psycopg2-binary
 pydantic
 langchain
 langchain-openai
 python-dotenv
-EOL
-psycopg2-binary

@@ -4,7 +4,9 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # PostgreSQL database URL
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost:5432/AI_CHATBOT"
+# SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost:5432/AI_CHATBOT"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@db:5432/AI_CHATBOT"
+
 
 # Create engine
 engine = create_engine(
