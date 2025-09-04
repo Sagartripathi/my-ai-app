@@ -36,7 +36,7 @@ jobs:
         id: build-image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: gorakh-personal-app-api
+          ECR_REPOSITORY: ia_app
           IMAGE_TAG: ${{ github.sha }}
         run: |
           # Build a docker container and push it to ECR
