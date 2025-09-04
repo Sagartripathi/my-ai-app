@@ -34,7 +34,7 @@ jobs:
 
       - name: Push Docker image to ECR
         run: |
-          docker push ${{ steps.login-ecr.outputs.registry }}/ia-app:latest
+          docker push ${{ steps.login-ecr.outputs.registry }}/ia_app:latest
 
       - name: Deploy to Elastic Beanstalk
         env:
@@ -45,7 +45,7 @@ jobs:
           {
             "AWSEBDockerrunVersion": "1",
             "Image": {
-              "Name": "${{ steps.login-ecr.outputs.registry }}/ia-app:latest",
+              "Name": "${{ steps.login-ecr.outputs.registry }}/ia_app:latest",
               "Update": "true"
             },
             "Ports": [
