@@ -11,44 +11,23 @@ services:
     env_file:
       - .env
     environment:
-      # DATABASE_URL: postgresql://postgres:admin@db:5432/AI_CHATBOT
       DATABASE_URL: postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres
-    depends_on:
-      db:
-        condition: service_healthy
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+      PORT: 8001
     volumes:
       - ./:/app
       - /app/__pycache__
     restart: unless-stopped
     networks:
       - app_network
-
-  db:
-    image: postgres:15
-    container_name: postgres_db
-    environment:
-      POSTGRES_DB: "database-1"
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "admin123"
-      POSTGRES_HOST_AUTH_METHOD: "trust"
-    ports:
-      - "5444:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-    networks:
-      - app_network
-    restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
-      interval: 10s
-      timeout: 5s
+      test: ["CMD-SHELL", "curl -f http://localhost:8002/ || exit 1"]
+      interval: 30s
+      timeout: 10s
       retries: 5
-      start_period: 30s
-
-volumes:
-  postgres_data:
-    driver: local
+      start_period: 10s
 
 networks:
   app_network:
