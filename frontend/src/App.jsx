@@ -12,7 +12,7 @@ function App() {
   // Fetch history from backend
   const fetchHistory = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/history");
+      const res = await axios.get("http://127.0.0.1:8002/history");
       setHistory(res.data);
     } catch (err) {
       console.log("Error fetching history", err);
@@ -28,7 +28,7 @@ function App() {
     setLoading(true);
     setAnswer("");
     try {
-      const res = await axios.post("http://127.0.0.1:8000/ask", {
+      const res = await axios.post("http://127.0.0.1:8002/ask", {
         text: input,
       });
       setAnswer(res.data.answer);
