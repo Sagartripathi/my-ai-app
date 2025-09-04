@@ -7,6 +7,10 @@ on:
     paths:
       - "backend/**"
       - ".github/workflows/main.yml"
+env:
+  AWS_REGION: us-east-1
+  EB_APPLICATION_NAME: ia_app_chat_bot
+  EB_ENVIRONMENT_NAME: Iaappchatbot-env
 
 jobs:
   deploy:
@@ -40,28 +44,21 @@ jobs:
           echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
           echo "latest_image=$ECR_REGISTRY/$ECR_REPOSITORY:latest" >> $GITHUB_OUTPUT
 
-      - name: Deploy to Elastic Beanstalk
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ECR_IMAGE: ${{ steps.login-ecr.outputs.registry }}/ia_app:latest
+      - name: Create deployment package
         run: |
-          # Create Dockerrun.aws.json file
-          cat > Dockerrun.aws.json <<EOL
-          {
-            "AWSEBDockerrunVersion": "1",
-            "Image": {
-              "Name": "${ECR_IMAGE}",
-              "Update": "true"
-            },
-            "Ports": [
-              {
-                "ContainerPort": "8080"
-              }
-            ],
-            "Environment": [
-              {
-                "Name": "OPENAI_API_KEY",
-                "Value": "${OPENAI_API_KEY}"
-              }
-            ]
-          }
+          cd backend/
+          zip -r backend.zip . -x "*.git*" "*.DS_Store*" "*.zip"
+
+      - name: Set up EB CLI
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: ${{ env.EB_APPLICATION_NAME }}
+          environment_name: ${{ env.EB_ENVIRONMENT_NAME }}
+          region: ${{ env.AWS_REGION }}
+          version_label: ${{ github.sha }}
+          deployment_package: backend/backend.zip
+          use_existing_version_if_available: true
+          wait_for_deployment: true
+          wait_for_environment_recovery: true
