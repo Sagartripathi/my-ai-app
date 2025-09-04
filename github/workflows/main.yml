@@ -1,0 +1,65 @@
+name: Deploy Docker to AWS Elastic Beanstalk
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1 # Change to your region
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build Docker image
+        run: |
+          docker build -t my-app:latest 
+          docker tag my-app:latest ${{ steps.login-ecr.outputs.registry }}/my-app:latest
+
+      - name: Push Docker image to ECR
+        run: |
+          docker push ${{ steps.login-ecr.outputs.registry }}/my-app:latest
+
+      - name: Deploy to Elastic Beanstalk
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }} # GitHub environment secret
+        run: |
+          # Create Dockerrun.aws.json file
+          cat > Dockerrun.aws.json <<EOL
+          {
+            "AWSEBDockerrunVersion": "1",
+            "Image": {
+              "Name": "${{ steps.login-ecr.outputs.registry }}/my-app:latest",
+              "Update": "true"
+            },
+            "Ports": [
+              {
+                "ContainerPort": "8080"
+              }
+            ],
+            "Environment": [
+              {
+                "Name": "OPENAI_API_KEY",
+                "Value": "${OPENAI_API_KEY}"
+              }
+            ]
+          }
+          EOL
+
+          # Deploy to Elastic Beanstalk
+          zip -r deploy.zip Dockerrun.aws.json
+          eb init my-app --platform docker --region us-east-1
+          eb deploy my-env

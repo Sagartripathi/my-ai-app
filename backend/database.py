@@ -5,7 +5,10 @@ from sqlalchemy.orm import sessionmaker
 
 # PostgreSQL database URL
 # SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost:5432/AI_CHATBOT"
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@db:5432/AI_CHATBOT"
+# SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@db:5432/AI_CHATBOT"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres"
+
+
 
 
 # Create engine

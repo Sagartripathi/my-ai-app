@@ -11,16 +11,14 @@ services:
     env_file:
       - .env
     environment:
-      # Database connection for internal Docker network
-      DATABASE_URL: postgresql://postgres:admin@db:5432/AI_CHATBOT
-      # Optional: You can override OpenAI API key here or keep it in .env
-      # OPENAI_API_KEY: ${OPENAI_API_KEY}
+      # DATABASE_URL: postgresql://postgres:admin@db:5432/AI_CHATBOT
+      DATABASE_URL: postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres
     depends_on:
       db:
         condition: service_healthy
     volumes:
-      - ./:/app # Mount local code for hot reload during development
-      - /app/__pycache__ # Exclude pycache from volume
+      - ./:/app
+      - /app/__pycache__
     restart: unless-stopped
     networks:
       - app_network
@@ -29,20 +27,20 @@ services:
     image: postgres:15
     container_name: postgres_db
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: AI_CHATBOT
-      POSTGRES_HOST_AUTH_METHOD: trust # For development only
+      POSTGRES_DB: "database-1"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "admin123"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
     ports:
-      - "5444:5432" # Map host:5444 to container:5432
+      - "5444:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql # Optional: initialization script
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - app_network
     restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d AI_CHATBOT"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
       interval: 10s
       timeout: 5s
       retries: 5
