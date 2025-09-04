@@ -10,7 +10,7 @@ from sqlalchemy.exc import OperationalError
 # If using a remote DB, use its FQDN
 # SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost:5432/AI_CHATBOT"
 # Example for a remote DB (uncomment and fill in if needed)
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@your_remote_db_host:5432/your_db_name"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres"
 
 
 # Create engine
