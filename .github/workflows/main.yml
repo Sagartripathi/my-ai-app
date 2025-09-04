@@ -71,9 +71,3 @@ jobs:
               }
             ]
           }
-          EOL
-
-          # Deploy to Elastic Beanstalk
-          zip -r deploy.zip Dockerrun.aws.json
-          eb init ia-app --platform docker --region us-east-1
-          eb deploy my-env
