@@ -29,12 +29,12 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t my-app:latest ./backend 
-          docker tag my-app:latest ${{ steps.login-ecr.outputs.registry }}/my-app:latest
+          docker build -t ia-app:latest ./backend 
+          docker tag ia-app:latest ${{ steps.login-ecr.outputs.registry }}/ia-app:latest
 
       - name: Push Docker image to ECR
         run: |
-          docker push ${{ steps.login-ecr.outputs.registry }}/my-app:latest
+          docker push ${{ steps.login-ecr.outputs.registry }}/ia-app:latest
 
       - name: Deploy to Elastic Beanstalk
         env:
@@ -45,7 +45,7 @@ jobs:
           {
             "AWSEBDockerrunVersion": "1",
             "Image": {
-              "Name": "${{ steps.login-ecr.outputs.registry }}/my-app:latest",
+              "Name": "${{ steps.login-ecr.outputs.registry }}/ia-app:latest",
               "Update": "true"
             },
             "Ports": [
@@ -64,5 +64,5 @@ jobs:
 
           # Deploy to Elastic Beanstalk
           zip -r deploy.zip Dockerrun.aws.json
-          eb init my-app --platform docker --region us-east-1
+          eb init ia-app --platform docker --region us-east-1
           eb deploy my-env
