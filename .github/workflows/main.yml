@@ -21,25 +21,18 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1 # Change to your region
+          aws-region: us-east-1
 
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Build Docker image
-        run: |
-          docker build -t ia-app:latest ./backend 
-          docker tag ia-app:latest ${{ steps.login-ecr.outputs.registry }}/ia-app:latest
-
-      - name: Build, tag, and push image to Amazon ECR
-        id: build-image
+      - name: Build, tag, and push Docker image to Amazon ECR
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: ia_app
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          # Build a docker container and push it to ECR
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f backend/Dockerfile backend/
           docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
@@ -49,14 +42,15 @@ jobs:
 
       - name: Deploy to Elastic Beanstalk
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }} # GitHub environment secret
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ECR_IMAGE: ${{ steps.login-ecr.outputs.registry }}/ia_app:latest
         run: |
           # Create Dockerrun.aws.json file
           cat > Dockerrun.aws.json <<EOL
           {
             "AWSEBDockerrunVersion": "1",
             "Image": {
-              "Name": "${{ steps.login-ecr.outputs.registry }}/ia_app:latest",
+              "Name": "${ECR_IMAGE}",
               "Update": "true"
             },
             "Ports": [

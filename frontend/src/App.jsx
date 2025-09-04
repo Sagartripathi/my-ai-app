@@ -12,7 +12,9 @@ function App() {
   // Fetch history from backend
   const fetchHistory = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8002/history");
+      const res = await axios.get(
+        "Iaappchatbot-env.eba-sxm5mvaz.us-east-1.elasticbeanstalk.com /history"
+      );
       setHistory(res.data);
     } catch (err) {
       console.log("Error fetching history", err);
@@ -28,9 +30,12 @@ function App() {
     setLoading(true);
     setAnswer("");
     try {
-      const res = await axios.post("http://127.0.0.1:8002/ask", {
-        text: input,
-      });
+      const res = await axios.post(
+        "Iaappchatbot-env.eba-sxm5mvaz.us-east-1.elasticbeanstalk.com/ask",
+        {
+          text: input,
+        }
+      );
       setAnswer(res.data.answer);
       setInput("");
       fetchHistory(); // Refresh history
