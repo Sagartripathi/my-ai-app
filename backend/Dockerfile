@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 8002
 
 # Run the FastAPI application (production mode)
-CMD ["uvicorn", "application:app", "--host", "0.0.0.0", "--port", "8002"]
+CMD ["uvicorn", "application:app", "--host", "0.0.0.0", "--port", "8000"]
