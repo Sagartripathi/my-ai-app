@@ -15,6 +15,8 @@ models.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI()
 
+
+
 # CORS for frontend (React dev server on Vite default port 5173)
 app.add_middleware(
     CORSMiddleware,
@@ -58,7 +60,6 @@ async def ask_ai(prompt: Prompt, db: Session = Depends(get_db)):
     return {"answer": response.content}
 
 
-
     
 @app.get("/history")
 def get_history(db: Session = Depends(get_db)):
@@ -67,6 +68,9 @@ def get_history(db: Session = Depends(get_db)):
         {"id": m.id, "prompt": m.prompt, "response": m.response} for m in messages
     ]
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
 
 
 if __name__ == "__main__":
