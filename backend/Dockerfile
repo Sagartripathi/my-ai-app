@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose port (Elastic Beanstalk expects this)
-EXPOSE 8000
+EXPOSE 8080
 
 # Run the FastAPI application (production mode)
-CMD ["uvicorn", "application:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "application:app", "--host", "0.0.0.0", "--port", "8080"]

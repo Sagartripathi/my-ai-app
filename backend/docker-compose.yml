@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: fastapi_app
     ports:
-      - "8080:8000"
+      - "8080:8080"
     env_file:
       - .env
     environment:
@@ -15,7 +15,7 @@ services:
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: mydatabase
-      PORT: 8000
+      PORT: 8080
     volumes:
       - ./:/app
       - /app/__pycache__
@@ -23,7 +23,7 @@ services:
     networks:
       - app_network
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5

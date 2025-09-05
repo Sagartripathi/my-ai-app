@@ -13,7 +13,7 @@ function App() {
   const fetchHistory = async () => {
     try {
       const res = await axios.get(
-        "Iaappchatbot-env.eba-sxm5mvaz.us-east-1.elasticbeanstalk.com /history"
+        "Iaappchatbot-env.eba-sxm5mvaz.us-east-1.elasticbeanstalk.com/history"
       );
       setHistory(res.data);
     } catch (err) {
