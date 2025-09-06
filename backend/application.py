@@ -74,6 +74,10 @@ def get_history(db: Session = Depends(get_db)):
         {"id": m.id, "prompt": m.prompt, "response": m.response} for m in messages
     ]
 
+@app.get("/")
+def root():
+    return {"message": "AI Chatbot API is running!", "endpoints": ["/ask", "/history", "/health"]}
+
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
