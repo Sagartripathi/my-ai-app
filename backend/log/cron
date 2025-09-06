@@ -165,3 +165,8 @@ Sep  6 17:01:02 ip-172-31-6-241 run-parts(/etc/cron.hourly)[12380]: starting cro
 Sep  6 17:01:02 ip-172-31-6-241 run-parts(/etc/cron.hourly)[12477]: finished cron.logrotate.elasticbeanstalk.web-stderr.conf
 Sep  6 17:01:02 ip-172-31-6-241 run-parts(/etc/cron.hourly)[12380]: starting cron.logrotate.elasticbeanstalk.web-stdout.conf
 Sep  6 17:01:02 ip-172-31-6-241 run-parts(/etc/cron.hourly)[12484]: finished cron.logrotate.elasticbeanstalk.web-stdout.conf
+Sep  6 17:10:02 ip-172-31-6-241 CROND[12959]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Sep  6 17:10:02 ip-172-31-6-241 CROND[12960]: (root) CMD (/opt/elasticbeanstalk/bin/publishlogs -type publish)
+Sep  6 17:20:01 ip-172-31-6-241 CROND[13422]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Sep  6 17:30:01 ip-172-31-6-241 CROND[13869]: (root) CMD (/opt/elasticbeanstalk/bin/publishlogs -type publish)
+Sep  6 17:30:01 ip-172-31-6-241 CROND[13870]: (root) CMD (/usr/lib64/sa/sa1 1 1)
