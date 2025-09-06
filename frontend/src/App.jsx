@@ -13,7 +13,7 @@ function App() {
   const fetchHistory = async () => {
     try {
       const res = await axios.get(
-        "Iaappchatbot-env.eba-sxm5mvaz.us-east-1.elasticbeanstalk.com/history"
+        "http://aichatbot-env.eba-erm5a6hf.us-east-1.elasticbeanstalk.com/history"
       );
       setHistory(res.data);
     } catch (err) {
@@ -31,7 +31,7 @@ function App() {
     setAnswer("");
     try {
       const res = await axios.post(
-        "Iaappchatbot-env.eba-sxm5mvaz.us-east-1.elasticbeanstalk.com/ask",
+        "http://aichatbot-env.eba-erm5a6hf.us-east-1.elasticbeanstalk.com/ask",
         {
           text: input,
         }

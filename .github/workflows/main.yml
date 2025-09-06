@@ -9,8 +9,8 @@ on:
       - ".github/workflows/main.yml"
 env:
   AWS_REGION: us-east-1
-  EB_APPLICATION_NAME: ia_app_chat_bot
-  EB_ENVIRONMENT_NAME: Iaappchatbot-env
+  EB_APPLICATION_NAME: ai_chat_bot
+  EB_ENVIRONMENT_NAME: Aichatbot-env
 
 jobs:
   deploy:
