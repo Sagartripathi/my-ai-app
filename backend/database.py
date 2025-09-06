@@ -4,13 +4,17 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import OperationalError
 
-# PostgreSQL database URL - CHANGE THIS TO YOUR ACTUAL DATABASE HOST
-# If running PostgreSQL locally via Homebrew, use 'localhost'
-# If running in Docker, ensure the port is mapped and use 'localhost'
-# If using a remote DB, use its FQDN
-# SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin@localhost:5432/AI_CHATBOT"
-# Example for a remote DB (uncomment and fill in if needed)
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres"
+# PostgreSQL database URL - Use environment variable for production
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Use environment variable for database URL, fallback to local development
+SQLALCHEMY_DATABASE_URL = os.getenv(
+    "DATABASE_URL", 
+    "postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres"
+)
 
 
 # Create engine

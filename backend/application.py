@@ -11,16 +11,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Create tables
-# models.Base.metadata.create_all(bind=database.engine)
+models.Base.metadata.create_all(bind=database.engine)
+
 
 app = FastAPI()
 
 
 
-# CORS for frontend (React dev server on Vite default port 5173)
+# CORS for frontend - allow all origins in production, localhost in development
+allowed_origins = ["http://localhost:5173"]
+if os.getenv("ENVIRONMENT") == "production":
+    allowed_origins = ["*"]  # In production, you should specify your actual frontend domain
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -75,4 +80,5 @@ def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("application:app", host="0.0.0.0", port=8080, reload=True)
+    port = int(os.getenv("PORT", 8080))
+    uvicorn.run("application:app", host="0.0.0.0", port=port, reload=False)
