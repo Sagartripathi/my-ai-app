@@ -3365,3 +3365,705 @@ Sep  6 17:38:00 ip-172-31-6-241 systemd: Started This is eb-docker-compose-log d
 Sep  6 17:38:04 ip-172-31-6-241 docker: 2025/09/06 17:38:04 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
 Sep  6 17:38:30 ip-172-31-6-241 docker: 2025/09/06 17:38:30 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
 Sep  6 17:38:55 ip-172-31-6-241 dhclient[2100]: XMT: Solicit on eth0, interval 128850ms.
+Sep  6 17:40:02 ip-172-31-6-241 systemd: Created slice User Slice of root.
+Sep  6 17:40:02 ip-172-31-6-241 systemd: Started Session 41 of user root.
+Sep  6 17:40:02 ip-172-31-6-241 systemd: Removed slice User Slice of root.
+Sep  6 17:40:54 ip-172-31-6-241 amazon-ssm-agent: 2025-09-06 17:40:54.0432 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: AccessDeniedException: User: arn:aws:sts::450703216097:assumed-role/aws-elasticbeanstalk-ec2-role/i-09cbb0d69946b9320 is not authorized to perform: ssm:UpdateInstanceInformation on resource: arn:aws:ec2:us-east-1:450703216097:instance/i-09cbb0d69946b9320 because no identity-based policy allows the ssm:UpdateInstanceInformation action
+Sep  6 17:40:54 ip-172-31-6-241 amazon-ssm-agent: 2025-09-06 17:40:54.0821 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 450703216097
+Sep  6 17:40:54 ip-172-31-6-241 amazon-ssm-agent: status code: 400, request id: 82daf447-8ce3-4d95-b38a-bf32fee49b08
+Sep  6 17:41:04 ip-172-31-6-241 dhclient[2100]: XMT: Solicit on eth0, interval 129380ms.
+Sep  6 17:43:14 ip-172-31-6-241 dhclient[2100]: XMT: Solicit on eth0, interval 129910ms.
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Stopping This is healthd daemon...
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Stopped This is healthd daemon.
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:48 ip-172-31-6-241 systemd: Starting This is healthd daemon...
+Sep  6 17:43:49 ip-172-31-6-241 systemd: Started This is healthd daemon.
+Sep  6 17:43:49 ip-172-31-6-241 systemd: Stopping System Logging Service...
+Sep  6 17:43:49 ip-172-31-6-241 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/puma-6.6.0/lib/puma/launcher.rb:92: warning: conflicting chdir during another chdir block
+Sep  6 17:43:49 ip-172-31-6-241 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/bin/healthd:19: note: previous chdir was here
+Sep  6 17:43:49 ip-172-31-6-241 healthd: * Listening on http://127.0.0.1:22221
+Sep  6 17:43:49 ip-172-31-6-241 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.2" x-pid="14688" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Sep  6 17:43:49 ip-172-31-6-241 systemd: Stopped System Logging Service.
+Sep  6 17:43:49 ip-172-31-6-241 systemd: Starting System Logging Service...
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.2" x-pid="16010" x-info="http://www.rsyslog.com"] start
+Sep  6 17:43:49 ip-172-31-6-241 systemd: Started System Logging Service.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:49 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:43:49 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Stopping This is eb-docker-compose-events daemon...
+Sep  6 17:43:50 ip-172-31-6-241 systemd: eb-docker-compose-events.service: main process exited, code=exited, status=130/n/a
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Stopped This is eb-docker-compose-events daemon.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Unit eb-docker-compose-events.service entered failed state.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: eb-docker-compose-events.service failed.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Stopping This is eb-docker-compose-log daemon...
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Stopped This is eb-docker-compose-log daemon.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:50 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:43:59 ip-172-31-6-241 healthd: Version 2 of the Ruby SDK will enter maintenance mode as of November 20, 2020. To continue receiving service updates and new features, please upgrade to Version 3. More information can be found here: https://aws.amazon.com/blogs/developer/deprecation-schedule-for-aws-sdk-for-ruby-v2/
+Sep  6 17:44:00 ip-172-31-6-241 docker: time="2025-09-06T17:44:00.802246470Z" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=a8e635e9edda5ae80af16451bb297dce0c4cdc7a84934f9124a76d78d3349a1c
+Sep  6 17:44:00 ip-172-31-6-241 docker: time="2025-09-06T17:44:00.838085184Z" level=info msg="ignoring event" container=a8e635e9edda5ae80af16451bb297dce0c4cdc7a84934f9124a76d78d3349a1c module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep  6 17:44:00 ip-172-31-6-241 containerd: time="2025-09-06T17:44:00.838632900Z" level=info msg="shim disconnected" id=a8e635e9edda5ae80af16451bb297dce0c4cdc7a84934f9124a76d78d3349a1c namespace=moby
+Sep  6 17:44:00 ip-172-31-6-241 containerd: time="2025-09-06T17:44:00.839056093Z" level=warning msg="cleaning up after shim disconnected" id=a8e635e9edda5ae80af16451bb297dce0c4cdc7a84934f9124a76d78d3349a1c namespace=moby
+Sep  6 17:44:00 ip-172-31-6-241 containerd: time="2025-09-06T17:44:00.839098825Z" level=info msg="cleaning up dead shim" namespace=moby
+Sep  6 17:44:00 ip-172-31-6-241 docker: time="2025-09-06T17:44:00.854366787Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=a8e635e9edda5ae80af16451bb297dce0c4cdc7a84934f9124a76d78d3349a1c daemonShuttingDown=false error="restart canceled" execDuration=6m0.387854652s exitStatus="{137 2025-09-06 17:44:00.826075506 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+Sep  6 17:44:00 ip-172-31-6-241 kernel: br-80f3836eb211: port 1(vethd39b44a) entered disabled state
+Sep  6 17:44:00 ip-172-31-6-241 kernel: veth4d8604d: renamed from eth0
+Sep  6 17:44:00 ip-172-31-6-241 kernel: br-80f3836eb211: port 1(vethd39b44a) entered disabled state
+Sep  6 17:44:00 ip-172-31-6-241 kernel: device vethd39b44a left promiscuous mode
+Sep  6 17:44:00 ip-172-31-6-241 kernel: br-80f3836eb211: port 1(vethd39b44a) entered disabled state
+Sep  6 17:44:01 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:44:01 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:44:01 ip-172-31-6-241 systemd: Starting This is eb-docker-compose-events daemon...
+Sep  6 17:44:01 ip-172-31-6-241 systemd: Started This is eb-docker-compose-events daemon.
+Sep  6 17:44:02 ip-172-31-6-241 docker: 2025/09/06 17:44:02 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Sep  6 17:44:02 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered blocking state
+Sep  6 17:44:02 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered disabled state
+Sep  6 17:44:02 ip-172-31-6-241 kernel: device veth062548a entered promiscuous mode
+Sep  6 17:44:02 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered blocking state
+Sep  6 17:44:02 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered forwarding state
+Sep  6 17:44:02 ip-172-31-6-241 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): br-b3cb56efbe59: link becomes ready
+Sep  6 17:44:02 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered disabled state
+Sep  6 17:44:02 ip-172-31-6-241 containerd: time="2025-09-06T17:44:02.821780112Z" level=info msg="connecting to shim b0ad0ee747399df02d271c49b13745c86e9462a4baf6dd91c7d82e4abe2f716a" address="unix:///run/containerd/s/a2e657ff6f97c3c7a46db4e4086c29bc9f50a397b67f421eaae39448896fdf28" namespace=moby protocol=ttrpc version=3
+Sep  6 17:44:03 ip-172-31-6-241 kernel: eth0: renamed from veth94df01d
+Sep  6 17:44:03 ip-172-31-6-241 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth062548a: link becomes ready
+Sep  6 17:44:03 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered blocking state
+Sep  6 17:44:03 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered forwarding state
+Sep  6 17:44:03 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:44:03 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:44:03 ip-172-31-6-241 systemd: Starting This is eb-docker-compose-log daemon...
+Sep  6 17:44:03 ip-172-31-6-241 systemd: Started This is eb-docker-compose-log daemon.
+Sep  6 17:44:05 ip-172-31-6-241 docker: 2025/09/06 17:44:05 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Sep  6 17:44:33 ip-172-31-6-241 docker: 2025/09/06 17:44:33 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Sep  6 17:45:24 ip-172-31-6-241 dhclient[2100]: XMT: Solicit on eth0, interval 123530ms.
+Sep  6 17:45:32 ip-172-31-6-241 systemd: Stopping This is healthd daemon...
+Sep  6 17:45:32 ip-172-31-6-241 systemd: Stopped This is healthd daemon.
+Sep  6 17:45:32 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:32 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:32 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Starting This is healthd daemon...
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Started This is healthd daemon.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/puma-6.6.0/lib/puma/launcher.rb:92: warning: conflicting chdir during another chdir block
+Sep  6 17:45:33 ip-172-31-6-241 healthd: /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/bin/healthd:19: note: previous chdir was here
+Sep  6 17:45:33 ip-172-31-6-241 healthd: * Listening on http://127.0.0.1:22221
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 healthd: NOTE: Gem::Platform.match is deprecated; use Gem::Platform.match_spec? or match_gem? instead. It will be removed in Rubygems 4
+Sep  6 17:45:33 ip-172-31-6-241 healthd: Gem::Platform.match called from /opt/elasticbeanstalk/lib/ruby/lib/ruby/gems/3.4.0/gems/healthd-1.0.7/lib/healthd/daemon/plugins/manager.rb:72.
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Stopping System Logging Service...
+Sep  6 17:45:33 ip-172-31-6-241 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.2" x-pid="16010" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Stopped System Logging Service.
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Starting System Logging Service...
+Sep  6 17:45:33 ip-172-31-6-241 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0-57.amzn2.2.0.2" x-pid="17144" x-info="http://www.rsyslog.com"] start
+Sep  6 17:45:33 ip-172-31-6-241 systemd: Started System Logging Service.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:12] Failed to parse service type, ignoring: exec
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:18] Unknown lvalue 'LogsDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:19] Unknown lvalue 'LogsDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:20] Unknown lvalue 'ConfigurationDirectory' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: [/etc/systemd/system/xray.service:21] Unknown lvalue 'ConfigurationDirectoryMode' in section 'Service'
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Stopping This is eb-docker-compose-events daemon...
+Sep  6 17:45:34 ip-172-31-6-241 systemd: eb-docker-compose-events.service: main process exited, code=exited, status=130/n/a
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Stopped This is eb-docker-compose-events daemon.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Unit eb-docker-compose-events.service entered failed state.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: eb-docker-compose-events.service failed.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Stopping This is eb-docker-compose-log daemon...
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Stopped This is eb-docker-compose-log daemon.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:34 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:43 ip-172-31-6-241 healthd: Version 2 of the Ruby SDK will enter maintenance mode as of November 20, 2020. To continue receiving service updates and new features, please upgrade to Version 3. More information can be found here: https://aws.amazon.com/blogs/developer/deprecation-schedule-for-aws-sdk-for-ruby-v2/
+Sep  6 17:45:44 ip-172-31-6-241 docker: time="2025-09-06T17:45:44.919846754Z" level=info msg="Container failed to exit within 10s of signal 15 - using the force" container=b0ad0ee747399df02d271c49b13745c86e9462a4baf6dd91c7d82e4abe2f716a
+Sep  6 17:45:44 ip-172-31-6-241 docker: time="2025-09-06T17:45:44.956895382Z" level=info msg="ignoring event" container=b0ad0ee747399df02d271c49b13745c86e9462a4baf6dd91c7d82e4abe2f716a module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep  6 17:45:44 ip-172-31-6-241 containerd: time="2025-09-06T17:45:44.957092864Z" level=info msg="shim disconnected" id=b0ad0ee747399df02d271c49b13745c86e9462a4baf6dd91c7d82e4abe2f716a namespace=moby
+Sep  6 17:45:44 ip-172-31-6-241 containerd: time="2025-09-06T17:45:44.957133720Z" level=warning msg="cleaning up after shim disconnected" id=b0ad0ee747399df02d271c49b13745c86e9462a4baf6dd91c7d82e4abe2f716a namespace=moby
+Sep  6 17:45:44 ip-172-31-6-241 containerd: time="2025-09-06T17:45:44.957146225Z" level=info msg="cleaning up dead shim" namespace=moby
+Sep  6 17:45:44 ip-172-31-6-241 docker: time="2025-09-06T17:45:44.973018466Z" level=warning msg="ShouldRestart failed, container will not be restarted" container=b0ad0ee747399df02d271c49b13745c86e9462a4baf6dd91c7d82e4abe2f716a daemonShuttingDown=false error="restart canceled" execDuration=1m41.841517007s exitStatus="{137 2025-09-06 17:45:44.945056759 +0000 UTC}" hasBeenManuallyStopped=true restartCount=0
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered disabled state
+Sep  6 17:45:45 ip-172-31-6-241 kernel: veth94df01d: renamed from eth0
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered disabled state
+Sep  6 17:45:45 ip-172-31-6-241 kernel: device veth062548a left promiscuous mode
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-b3cb56efbe59: port 1(veth062548a) entered disabled state
+Sep  6 17:45:45 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:45 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:45 ip-172-31-6-241 systemd: Starting This is eb-docker-compose-events daemon...
+Sep  6 17:45:45 ip-172-31-6-241 systemd: Started This is eb-docker-compose-events daemon.
+Sep  6 17:45:45 ip-172-31-6-241 docker: 2025/09/06 17:45:45 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-75964c98190e: port 1(vethb816d18) entered blocking state
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-75964c98190e: port 1(vethb816d18) entered disabled state
+Sep  6 17:45:45 ip-172-31-6-241 kernel: device vethb816d18 entered promiscuous mode
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-75964c98190e: port 1(vethb816d18) entered blocking state
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-75964c98190e: port 1(vethb816d18) entered forwarding state
+Sep  6 17:45:45 ip-172-31-6-241 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): br-75964c98190e: link becomes ready
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-75964c98190e: port 1(vethb816d18) entered disabled state
+Sep  6 17:45:45 ip-172-31-6-241 containerd: time="2025-09-06T17:45:45.798024148Z" level=info msg="connecting to shim b4ec71a84e7ab8d9df0c47554f59c95045c235891fb7f805056dac98ad96c210" address="unix:///run/containerd/s/6e3b93f286bc9cad5652ed7485a2c9f6f4e99d803f75e1f85d9ff0ca3c52aa54" namespace=moby protocol=ttrpc version=3
+Sep  6 17:45:45 ip-172-31-6-241 kernel: eth0: renamed from veth5483bd3
+Sep  6 17:45:45 ip-172-31-6-241 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): vethb816d18: link becomes ready
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-75964c98190e: port 1(vethb816d18) entered blocking state
+Sep  6 17:45:45 ip-172-31-6-241 kernel: br-75964c98190e: port 1(vethb816d18) entered forwarding state
+Sep  6 17:45:46 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:46 ip-172-31-6-241 systemd: Reloading.
+Sep  6 17:45:46 ip-172-31-6-241 systemd: Starting This is eb-docker-compose-log daemon...
+Sep  6 17:45:46 ip-172-31-6-241 systemd: Started This is eb-docker-compose-log daemon.
+Sep  6 17:45:47 ip-172-31-6-241 docker: 2025/09/06 17:45:47 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Sep  6 17:46:16 ip-172-31-6-241 docker: 2025/09/06 17:46:16 http: superfluous response.WriteHeader call from go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*respWriterWrapper).WriteHeader (wrap.go:98)
+Sep  6 17:47:27 ip-172-31-6-241 dhclient[2100]: XMT: Solicit on eth0, interval 129430ms.
