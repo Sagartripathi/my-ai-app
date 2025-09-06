@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Create tables
-models.Base.metadata.create_all(bind=database.engine)
+# models.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI()
 
