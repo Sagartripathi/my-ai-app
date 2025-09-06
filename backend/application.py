@@ -18,6 +18,7 @@ app = FastAPI()
 
 
 
+
 # CORS for frontend - allow all origins in production, localhost in development
 allowed_origins = ["http://localhost:5173"]
 if os.getenv("ENVIRONMENT") == "production":
