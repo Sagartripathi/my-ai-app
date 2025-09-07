@@ -43,27 +43,51 @@ def get_db():
 class Prompt(BaseModel):
     text: str
 
+# @app.post("/ask")
+# async def ask_ai(prompt: Prompt, db: Session = Depends(get_db)):
+#     # Load API key from environment
+#     api_key = os.getenv("OPENAI_API_KEY")
+#     if not api_key:
+#         return {"error": "OpenAI API key not set. Please add it to your .env file."}
+
+#     llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
+#     response = llm.invoke(prompt.text)
+
+#     # Save to DB
+#     new_message = models.Message(
+#         prompt=prompt.text,
+#         response=response.content if hasattr(response, "content") else str(response),
+#     )
+#     db.add(new_message)
+#     db.commit()
+#     db.refresh(new_message)
+
+#     return {"answer": response.content}
+
 @app.post("/ask")
 async def ask_ai(prompt: Prompt, db: Session = Depends(get_db)):
-    # Load API key from environment
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return {"error": "OpenAI API key not set. Please add it to your .env file."}
 
-    llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
-    response = llm.invoke(prompt.text)
+    try:
+        llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
+        response = llm.invoke(prompt.text)
+        answer_text = response.content if hasattr(response, "content") else str(response)
+    except Exception as e:
+        # Return the actual error for debugging
+        return {"error": str(e)}
 
     # Save to DB
     new_message = models.Message(
         prompt=prompt.text,
-        response=response.content if hasattr(response, "content") else str(response),
+        response=answer_text,
     )
     db.add(new_message)
     db.commit()
     db.refresh(new_message)
 
-    return {"answer": response.content}
-
+    return {"answer": answer_text}
 
     
 @app.get("/history")
