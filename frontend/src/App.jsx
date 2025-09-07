@@ -47,8 +47,13 @@ function App() {
       console.log(err);
       if (err.response?.data?.error) {
         setError(`❌ ${err.response.data.error}`);
-      } else if (err.code === 'NETWORK_ERROR' || err.message.includes('Network Error')) {
-        setError("❌ Cannot connect to AI backend. Please check your internet connection.");
+      } else if (
+        err.code === "NETWORK_ERROR" ||
+        err.message.includes("Network Error")
+      ) {
+        setError(
+          "❌ Cannot connect to AI backend. Please check your internet connection."
+        );
       } else {
         setError("❌ Error connecting to AI backend. Please try again.");
       }
@@ -72,7 +77,7 @@ function App() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => {
-            if (e.ctrlKey && e.key === 'Enter') {
+            if (e.ctrlKey && e.key === "Enter") {
               askAI();
             }
           }}
@@ -83,12 +88,14 @@ function App() {
         </button>
 
         {answer && <div className="answer-box">{answer}</div>}
-        
+
         {error && <div className="error-box">{error}</div>}
 
         <h2 className="history-title">🕘 Chat History</h2>
         {history.length === 0 ? (
-          <div className="no-history">No chat history yet. Start a conversation!</div>
+          <div className="no-history">
+            No chat history yet. Start a conversation!
+          </div>
         ) : (
           <table className="history-table">
             <thead>
