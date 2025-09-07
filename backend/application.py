@@ -6,6 +6,7 @@ from langchain_openai import ChatOpenAI
 from fastapi.middleware.cors import CORSMiddleware
 import os
 from dotenv import load_dotenv
+from fastapi import HTTPException
 
 # Load environment variables from .env
 load_dotenv()
@@ -43,53 +44,86 @@ def get_db():
 class Prompt(BaseModel):
     text: str
 
-# @app.post("/ask")
-# async def ask_ai(prompt: Prompt, db: Session = Depends(get_db)):
-#     # Load API key from environment
-#     api_key = os.getenv("OPENAI_API_KEY")
-#     if not api_key:
-#         return {"error": "OpenAI API key not set. Please add it to your .env file."}
-
-#     llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
-#     response = llm.invoke(prompt.text)
-
-#     # Save to DB
-#     new_message = models.Message(
-#         prompt=prompt.text,
-#         response=response.content if hasattr(response, "content") else str(response),
-#     )
-#     db.add(new_message)
-#     db.commit()
-#     db.refresh(new_message)
-
-#     return {"answer": response.content}
-
 @app.post("/ask")
 async def ask_ai(prompt: Prompt, db: Session = Depends(get_db)):
+    # Load API key from environment
     api_key = os.getenv("OPENAI_API_KEY")
+    print("api_key",api_key)
+
     if not api_key:
-        return {"error": "OpenAI API key not set. Please add it to your .env file."}
+        raise HTTPException(status_code=500, detail="OpenAI API key not set. Please add it to your .env file.")
 
     try:
+        # Call OpenAI
         llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
         response = llm.invoke(prompt.text)
         answer_text = response.content if hasattr(response, "content") else str(response)
+
+        # Save to DB
+        new_message = models.Message(
+            prompt=prompt.text,
+            response=answer_text,
+        )
+        db.add(new_message)
+        db.commit()
+        db.refresh(new_message)
+
+        return {"answer": answer_text}
+
     except Exception as e:
-        # Return the actual error for debugging
-        return {"error": str(e)}
+        error_str = str(e)
+        debug = os.getenv("DEBUG") == "1"
+        # Handle specific OpenAI quota error
+        if "insufficient_quota" in error_str or "429" in error_str:
+            detail = "OpenAI API quota exceeded. Please check your account or billing details."
+            if debug:
+                detail = f"{detail} | raw: {error_str}"
+            raise HTTPException(status_code=402, detail=detail)
+        elif "Invalid API key" in error_str or "incorrect API key" in error_str:
+            detail = "Invalid OpenAI API key. Please check your .env file."
+            if debug:
+                detail = f"{detail} | raw: {error_str}"
+            raise HTTPException(status_code=401, detail=detail)
+        else:
+            # Generic fallback for other errors
+            detail = f"An unexpected error occurred: {error_str}" if debug else "An unexpected error occurred"
+            raise HTTPException(status_code=500, detail=detail)
 
-    # Save to DB
-    new_message = models.Message(
-        prompt=prompt.text,
-        response=answer_text,
-    )
-    db.add(new_message)
-    db.commit()
-    db.refresh(new_message)
-
-    return {"answer": answer_text}
-
+@app.get("/diagnostics/openai")
+def diagnostics_openai():
+    api_key = os.getenv("OPENAI_API_KEY")
+    has_key = bool(api_key)
     
+    # Mask the key for security (show first 8 and last 4 chars)
+    masked_key = None
+    if api_key:
+        if len(api_key) > 12:
+            masked_key = f"{api_key[:8]}...{api_key[-4:]}"
+        else:
+            masked_key = "***masked***"
+    
+    try:
+        if not has_key:
+            raise ValueError("OPENAI_API_KEY missing")
+        # Minimal call: create client and inspect model attribute resolution by a no-op invoke
+        llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
+        _ = str(llm)
+        return {
+            "openaiKeyLoaded": has_key, 
+            "apiKey": masked_key,
+            "model": "gpt-4o-mini", 
+            "status": "ok"
+        }
+    except Exception as e:
+        debug = os.getenv("DEBUG") == "1"
+        return {
+            "openaiKeyLoaded": has_key,
+            "apiKey": masked_key,
+            "model": "gpt-4o-mini",
+            "status": "error",
+            "error": str(e) if debug else "error",
+        }
+
 @app.get("/history")
 def get_history(db: Session = Depends(get_db)):
     messages = db.query(models.Message).order_by(models.Message.id.desc()).all()
@@ -99,7 +133,7 @@ def get_history(db: Session = Depends(get_db)):
 
 @app.get("/")
 def root():
-    return {"message": "AI Chatbot API is running!", "endpoints": ["/ask", "/history", "/health"]}
+    return {"message": "AI Chatbot API is running!", "endpoints": ["/ask", "/history", "/health", "/diagnostics/openai"]}
 
 @app.get("/health")
 def health_check():

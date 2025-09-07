@@ -11,10 +11,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Use environment variable for database URL, fallback to local development
-SQLALCHEMY_DATABASE_URL = os.getenv(
-    "DATABASE_URL", 
-    "postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres"
-)
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:admin123@database-1.ccda62qsu988.us-east-1.rds.amazonaws.com:5432/postgres"
+#  "postgresql://postgres:admin@localhost:5432/AI_CHATBOT"
+# SQLALCHEMY_DATABASE_URL = os.getenv(
+#     "DATABASE_URL", 
+#     "postgresql://username:password@localhost/mydb"
+# )
 
 
 # Create engine

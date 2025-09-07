@@ -34,12 +34,9 @@ function App() {
     setAnswer("");
     setError("");
     try {
-      const res = await axios.post(
-        "http://aichatbot-env.eba-erm5a6hf.us-east-1.elasticbeanstalk.com/ask",
-        {
-          text: input,
-        }
-      );
+      const res = await axios.post("http://127.0.0.1:8000/ask", {
+        text: input,
+      });
       setAnswer(res.data.answer);
       setInput("");
       fetchHistory(); // Refresh history
